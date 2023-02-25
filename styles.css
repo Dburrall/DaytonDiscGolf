@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Raleway;
+  
+}
+
+html, body {
+    margin: 0;
+    padding: 0; 
+    background-color:#E4F9F5;
+}
+
+ 
+  nav{
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+  }
+
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+.navbar-customclass{
+    background-color: #11999E;
+    
+}
+
+.navbar-brand{
+    font-weight:bold;
+}
+.nav-link{
+    font-weight:bold;
+}
+
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 2px solid #e9ecef;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s ease-in-out;
+}
+
+.navbar-text{
+    font-size:20px;
+    font-weight:bold;
+}
+.site-name{
+    color:white;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #1CD6CE;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #1CD6CE;
+}
+
+
+
+
+/*HOME PAGE STYLING*/
+
+.parallax {
+    /* The image used */
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ),url("images/background5.jpeg");
+  
+    /* Set a specific height */
+    min-height: 800px; 
+
+  
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.parallax h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.parallax a{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+
+#introduction{
+    min-height:700px;
+    margin-top: 100px;
+}
+
+#introduction p {
+    display:flex;
+    font-size:21px;
+    font-weight: 900;
+    text-align:flex-start;
+    color: #000;
+}
+
+.col-header {
+    font-weight: bold;
+}
+
+.disc-header{
+    padding-left:25px;
+    background-color: #E4F9F5;
+    font-size:64px;
+}
+
+#shop-now {
+display:flex;
+flex-direction: row;
+background-color: #E4F9F5;
+}
+
+#shop-now .btn {
+    background-color: #11999E !important;
+    color: #fff;
+
+}
+
+#favorite-courses {
+    background-color: #40514E;
+}
+
+#favorite-courses h1 {
+    font-size:64px;
+    color: #ffff
+    
+}
+
+#favorite-courses .btn {
+    background-color: #11999E !important;
+    color: #fff;
+    
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+
+.card:hover{
+    box-shadow: 0 15px 110px -10px rgba(31, 31, 31, 0.5);
+    transition: all 0.3s ease;
+    transform: scale(1.05);
+}
+
+
+/*SHOP PAGE STYLING*/
+.filterDiv {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#myBtnContainer{
+   padding:20px;
+}
+
+
+
+.shop-item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 180px;
+    width:auto;
+}
+
+.shop-item-details {
+    list-style: none;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    font-size:20px;
+    font-weight:bold;
+    color: rgb(17, 16, 16);
+   
+}
+
+.shop-item-button {
+    width:180px;
+    height:auto;
+}
+ 
+/*CART STYLE*/
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+/*LOCATIONS*/
+
+
+  .card {
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+  }
+  .card-header img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 150px;
+  }
+  
+  .tag {
+    background: #cccccc;
+    border-radius: 50px;
+    font-size: 12px;
+    margin: 0;
+    color: #fff;
+    padding: 2px 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .tag-teal {
+    background-color: #47bcd4;
+  }
+  .card-body p {
+    font-size: 17px;
+    margin: 0 0 40px;
+  }
+  
+
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#courses{
+    background-color:#40514E;
+}
+
+.section-header{
+    font-size:40px;
+    font-weight:1000;
+    text-align: center;
+}
+
+.container-location{
+    border:2px solid black;
+    background-color:#F6FBF4;
+    max-width:500px;
+    color: #000;
+    text-decoration: none;
+}
+
+.checked {
+    color: orange;
+  }
+
+.cardcontainer{
+    width: 350px;
+    height: 500px;
+    background-color: #F6FBF4;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.3s;
+}
+
+.coantent .btn{
+    background-color: #30E3CA;
+}
+.container-location:hover{
+    box-shadow: 0 0 45px gray;
+}
+.photo{
+    height: 300px;
+    width: 100%;
+}
+.photo img{
+    height: 100%;
+    width: 100%;
+}
+.txt1{
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+}
+.content{
+    width: 80%;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: -33px;
+}
+.txt4{
+    font-size:27px;
+    position: relative;
+    top: 33px;
+}
+.txt5{
+    position: relative;
+    top: 18px;
+    color: #E74C3C;
+    font-size: 23px;
+}
+.txt2{
+    position: relative;
+    top: 10px;
+    font-weight:1000;
+}
+
+/*ABOUT PAGE*/
+
+.about-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+
+/*GOOGLE MAPS*/
+#map{
+    height:900px;
+    width:100%;
+}
+
+/*FOOTER STYLE*/
+.main-footer {
+    background-color: #11999E; 
+    color: #fff;
+    padding: .25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.site-name{
+    color:#fff;
+    font-weight:900;
+}
+
+
+/*MEDIA QUERIES*/
+
+/*PHONES*/
+@media only screen and (max-width: 480px) {
+
+    html,
+    body{
+        overflow-x:hidden;
+  width: 400px;
+  height: 100vh;
+}
+/*Home page Mobile*/
+    .parallax{
+        display:block;
+    }
+
+   #introduction .hero-image{
+    display:block;
+
+   }
+
+   #shop-now {
+    
+    flex-direction:column;
+    align-items: flex-start;
+   }
+
+   
+
+   #favorite-courses{
+   flex-direction: column;
+   }
+
+   #favorite-courses h1{
+    font-size:30px;
+    font-weight:bold;
+   }
+
+
+
+   #favorite-courses .card-body {
+    min-height:350px;
+   }
+
+   #favorite-courses .btn {
+    min-width: 12vh;
+    min-height:auto;
+   }
+
+   /*Store Mobile*/
+   
+
+   /*Locations Mobile*/
+.photo img{
+   object-fit: contain;
+}
+
+.section-header{
+    font-size:22px;
+    text-align: center;
+}
+}
