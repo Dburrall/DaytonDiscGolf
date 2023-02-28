@@ -497,6 +497,28 @@ a, a:hover, a:focus, a:active {
 }
 
 
+/*//HOW TO PLAY//*/
+
+#how-to-play, p{
+    margin-top: 80px;
+    max-width:800px;
+    font-size:18px;
+}
+
+#how-to-play h4{
+    font-weight: 900;
+}
+
+#how-to-play h5{
+    font-weight: 500;
+}
+
+#navbar-example3{
+    max-width:400px;
+    position: fixed;
+}
+
+
 /*MEDIA QUERIES*/
 
 /*PHONES*/
