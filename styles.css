@@ -384,12 +384,14 @@ a, a:hover, a:focus, a:active {
 
 #courses{
     background-color:#40514E;
+    
 }
 
 .section-header{
     font-size:40px;
     font-weight:1000;
     text-align: center;
+    margin-top: 40px;
 }
 
 .container-location{
@@ -569,7 +571,9 @@ a, a:hover, a:focus, a:active {
    }
 
    /*Store Mobile*/
-   
+   #myBtnContainer{
+    margin-top: 40px;
+   }
 
    /*Locations Mobile*/
 .photo img{
@@ -579,5 +583,18 @@ a, a:hover, a:focus, a:active {
 .section-header{
     font-size:22px;
     text-align: center;
+}
+
+
+/*//HOW TO PLAY MOBILE//*/
+#how-to-play{
+    font-size:16px;
+   
+    margin-right:380px;
+    min-width:200px;
+}
+
+#navbar-example3{
+display:none;
 }
 }
